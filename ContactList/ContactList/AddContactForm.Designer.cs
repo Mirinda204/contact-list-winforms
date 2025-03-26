@@ -33,6 +33,8 @@
             this.btnLuu = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.SuspendLayout();
             // 
             // textBox1
@@ -78,11 +80,29 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Số điện thoại";
             // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(104, 12);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(241, 22);
+            this.txtEmail.TabIndex = 5;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(25, 12);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(31, 16);
+            this.labelControl1.TabIndex = 7;
+            this.labelControl1.Text = "Email";
+            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
+            // 
             // AddContactForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelControl1);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLuu);
@@ -102,5 +122,7 @@
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtEmail;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
     }
 }

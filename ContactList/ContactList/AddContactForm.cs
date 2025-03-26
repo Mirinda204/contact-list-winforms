@@ -27,5 +27,10 @@ namespace ContactList
             AddContactForm addForm = new AddContactForm();
             addForm.ShowDialog();
         }
+
+        private void labelControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
